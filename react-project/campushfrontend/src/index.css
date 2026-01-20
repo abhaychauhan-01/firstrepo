@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== CUSTOM COMPONENT STYLES ===== */
+@layer components {
+
+  .input {
+    @apply w-full px-4 py-2 rounded-lg 
+           bg-slate-900 text-slate-100
+           border border-slate-700
+           focus:outline-none focus:ring-2 focus:ring-sky-500
+           placeholder-slate-500
+           transition;
+  }
+
+  .textarea {
+    @apply w-full px-4 py-2 rounded-lg 
+           bg-slate-900 text-slate-100
+           border border-slate-700
+           focus:outline-none focus:ring-2 focus:ring-sky-500
+           placeholder-slate-500
+           resize-none transition;
+  }
+
+  .btn {
+    @apply w-full py-2 rounded-lg font-semibold
+           transition duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-sky-500 text-black
+           hover:bg-sky-400;
+  }
+
+  .btn-success {
+    @apply bg-emerald-500 text-black
+           hover:bg-emerald-400;
+  }
+
+  .btn-danger {
+    @apply bg-red-500 text-white
+           hover:bg-red-400;
+  }
+}
